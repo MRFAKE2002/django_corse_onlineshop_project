@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    # Django apps 
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -38,8 +39,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     
+    # Third party
+    'crispy_forms',
+    
+    # My apps
     'accounts',
     'pages',
+
 ]
 
 MIDDLEWARE = [
@@ -133,7 +139,12 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # accounts CustomUser config 
 
-AUTH_USER_MODEL = 'accounts.CustomUser'
+AUTH_USER_MODEL = 'accounts.CustomUser' # This is the user model for config project.
 
+LOGIN_REDIRECT_URL = 'home'
 
+LOGOUT_REDIRECT_URL = 'home'
 
+# crispy forms for config
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
