@@ -157,13 +157,13 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'accounts.CustomUser' # This is the user model for config project.
 
-LOGIN_REDIRECT_URL = 'home'
+LOGIN_REDIRECT_URL = 'home_page'
 
-LOGOUT_REDIRECT_URL = 'home'
+LOGOUT_REDIRECT_URL = 'home_page'
 
-# # for send a confirmation to console
+# for send a confirmation to console
 
-# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # # for send a confirmation from our email to user email
 
@@ -171,8 +171,8 @@ LOGOUT_REDIRECT_URL = 'home'
 # EMAIL_HOST = "smtp.gmail.com"
 # EMAIL_USE_TLS = True
 # EMAIL_PORT = 587
-# EMAIL_HOST_USER = "your_email@gmail.com"
-# EMAIL_HOST_PASSWORD = "your email password"
+# EMAIL_HOST_USER = "mr3fake@gmail.com"
+# EMAIL_HOST_PASSWORD = "roozbehbadali1381"
 
 # crispy forms for config
 

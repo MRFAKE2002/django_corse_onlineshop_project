@@ -5,6 +5,7 @@ from .models import CustomUser
 from .forms import CustomUserCreationForm, CustomUserChangeForm
 
 # admin.site.register(CustomUser, CustomUserAdmin)
+# username = roozbeh password = roozbehbadali1381
 @admin.register(CustomUser)
 class CustomUserAdmin(UserAdmin):
     model = CustomUser
