@@ -17,6 +17,13 @@
 
     </head>
     <body>
+        
+        {% if user.is_authenticated %}
+            <p> Hello {{ user.username }} | <a href="{% url 'account_logout' %}" target="_blank">Log Out</a> </p>
+        {% else %}
+            <p><a href="{% url 'account_signup' %}" target="_blank">Sign Up</a> | <a href="{% url 'account_login' %}" target="_blank">Log In</a></p>
+        {% endif %}
+
         {% block content %}
         
         {% endblock %}
