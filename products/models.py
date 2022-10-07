@@ -17,7 +17,17 @@ class Product(models.Model):
     def get_absolute_url(self):
         return reverse('product_detail', args=[self.pk])
     
-    
+
+# We can make a custom manager here for set our queryset for models 
+# In " Comment.objects " objects is manager and its work is get something from Comment model
+# This custom manager give us all comments that they are active
+# default manager " comments.objects.filter(active=True) "
+class ActiveCommentManager(models.Manager):
+    def get_queryset(self):
+        return super(ActiveCommentManager, self).get_queryset().filter(active=True)
+
+
+
 class Comment(models.Model):
     PRODUCT_STAR = [
         ('1', 'Very Bad'),
@@ -29,14 +39,20 @@ class Comment(models.Model):
     
     product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='comments')
     author = models.ForeignKey(get_user_model(), on_delete=models.CASCADE, related_name='comments')
-    body = models.TextField()
-    stars = models.CharField(max_length=10, choices=PRODUCT_STAR, blank=True)
+    body = models.TextField(verbose_name='Comment Text')
+    stars = models.CharField(max_length=10, choices=PRODUCT_STAR, blank=True, verbose_name='What is your score?')
     
     datetime_created = models.DateTimeField(auto_now_add=True)
     datetime_modified = models.DateTimeField(auto_now=True)
         
     active = models.BooleanField(default=True)
     
-    def get_absolute_url(self):
-        return reverse()
+    # Manager
+    # This is default code
+    objects = models.Manager()
+    # Now we can use this code " comments.active_comment_manager " instead of " comments.objects.filter(active=True) "
+    active_comment_manager = ActiveCommentManager()
     
+    def get_absolute_url(self):
+        return reverse('product_detail', args=[self.product.id])
+
