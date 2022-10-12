@@ -1,6 +1,7 @@
 {% extends '_base.html' %}
 
 {% load crispy_forms_tags %}
+{% load i18n %}
 {% load comment_tags %}
 
 {% block page_title %}
@@ -40,9 +41,9 @@
                                 {{ product.description}}
                             </p>
                             <div class="my-5 py-5 product-price-wrapper mb--25">
-                                <span class="money text-success">{{ product.price }} تومان</span>
+                                <span class="money text-success">{{ product.price }} {% trans '$' %}</span>
                                 <span class="price-separator">-</span>
-                                <span class="money old-price text-danger">۲۱۰,۰۰۰ تومان</span>
+                                <span class="money old-price text-danger">۲۱۰,۰۰۰ {% trans '$' %}</span>
                             </div>
                             <div class="product-action d-flex align-items-sm-center align-content-center mb--30">
                                 <div class="quantity-wrapper d-flex justify-content-start">
@@ -151,12 +152,12 @@
                                             <div class="row">
                                                 <div class="border-top py-5 w-100"></div>
                                                 <div class="col-lg-8 m-auto">
-                                                    <span class="reply-title pull-right">نظر خود را بنویسید</span>
+                                                    <span class="reply-title pull-right">{% trans 'Write your comment'%}</span>
                                                     <br>
                                                     <form action="{% url 'comment_create' product.id %}" class="form text-right" method="POST">
                                                         {% csrf_token %}
                                                         {{ comment_form|crispy }}
-                                                        <input type="submit" value="ارسال">
+                                                        <input type="submit" value="{% trans 'Submit' %}" />
                                                     </form>
                                                 </div>
                                             </div>

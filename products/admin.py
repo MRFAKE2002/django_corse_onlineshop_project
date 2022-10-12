@@ -19,7 +19,7 @@ class ProductAdmin(admin.ModelAdmin):
     ]
 
 
-# @admin.register(Comment)
-# class CommentAdmin(admin.ModelAdmin):
-#     list_display = ['product', 'author', 'body', 'stars', 'active',]
+@admin.register(Comment)
+class CommentAdmin(admin.ModelAdmin):
+    list_display = ['product', 'author', 'body', 'stars', 'active',]
 
