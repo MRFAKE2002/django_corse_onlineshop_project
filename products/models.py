@@ -9,6 +9,9 @@ class Product(models.Model):
     price = models.PositiveIntegerField(default=0)
     active = models.BooleanField(default=True)
     
+    # We must install pillow for add our images in media as file and config/settings and config/urls
+    image = models.ImageField(verbose_name='Product Image', upload_to='product/product_cover/', ) # blank=True,
+    
     datetime_created = models.DateTimeField(auto_now_add=True)
     datetime_modified = models.DateTimeField(auto_now=True)
 
