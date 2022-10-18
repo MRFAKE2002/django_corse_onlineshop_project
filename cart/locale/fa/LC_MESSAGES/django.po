@@ -1,0 +1,66 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-10-18 15:45+0330\n"
+"PO-Revision-Date: 2022-10-18 15:48+0330\n"
+"Last-Translator:   <roozbehsarcheshme@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Translated-Using: django-rosetta 0.9.8\n"
+
+#: .\cart.py:43
+msgid "Product successfully added to cart"
+msgstr "محصول با موفقیت به سبد  خرید اضافه  شد"
+
+#: .\cart.py:56
+msgid "Product successfully remove from cart"
+msgstr "محصول با موفقیت از سبد  خرید حذف شد"
+
+#: .\templates\cart\cart_detail.html:67 .\templates\cart\cart_detail.html:91
+#: .\templates\cart\cart_detail.html:126 .\templates\cart\cart_sidebar.html:26
+#: .\templates\cart\cart_sidebar.html:35
+msgid "$"
+msgstr "تومان"
+
+#: .\templates\cart\cart_detail.html:84
+msgid "Update"
+msgstr "بروزرسانی"
+
+#: .\templates\cart\cart_detail.html:100
+msgid " Cart is empty! Please add some products to the cart. "
+msgstr "سبد خرید خالی است! لطفا محصول به سبد خرید اضافه کنید"
+
+#: .\templates\cart\cart_detail.html:102
+msgid " Go shopping "
+msgstr "رفتن به فروشگاه"
+
+#: .\templates\cart\cart_detail.html:110
+msgid "Clear cart"
+msgstr "خالی کردن سبد خرید"
+
+#: .\templates\cart\cart_sidebar.html:8
+msgid "Cart"
+msgstr "سبد خرید"
+
+#: .\templates\cart\cart_sidebar.html:33
+msgid "total price"
+msgstr "قیمت کل"
+
+#: .\templates\cart\cart_sidebar.html:38
+msgid "go to Cart"
+msgstr "رفتن به سبد خرید"
+
+#: .\templates\cart\cart_sidebar.html:39
+msgid "checkout"
+msgstr "پرداخت"
