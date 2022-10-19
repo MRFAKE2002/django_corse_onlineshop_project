@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-18 15:44+0330\n"
-"PO-Revision-Date: 2022-10-18 11:30+0330\n"
+"POT-Creation-Date: 2022-10-19 21:32+0330\n"
+"PO-Revision-Date: 2022-10-19 21:42+0330\n"
 "Last-Translator:   <roozbehsarcheshme@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -19,45 +19,48 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Translated-Using: django-rosetta 0.9.8\n"
 
-#: .\models.py:43
+#: .\products\models.py:17
+msgid "Date time created"
+msgstr "تاریخ ساخت"
+
+#: .\products\models.py:48
 msgid "Comment Text"
 msgstr "متن پیام"
 
-#: .\models.py:44
+#: .\products\models.py:49
 msgid "What is your score?"
 msgstr "نظر شما"
 
-#: .\templates\products\product_detail.html:21
-msgid "product detail"
-msgstr "جزِییات محصول"
-
-#: .\templates\products\product_detail.html:44
-#: .\templates\products\product_detail.html:46
-#: .\templates\products\product_list.html:75
+#: .\products\templates\products\product_detail.html:43
+#: .\products\templates\products\product_detail.html:45
+#: .\products\templates\products\product_list.html:75
 msgid "$"
 msgstr "تومان"
 
-#: .\templates\products\product_detail.html:60
-#: .\templates\products\product_list.html:81
+#: .\products\templates\products\product_detail.html:59
+#: .\products\templates\products\product_list.html:81
 msgid "add to cart"
 msgstr "اضافه به سبد خرید"
 
-#: .\templates\products\product_detail.html:168
+#: .\products\templates\products\product_detail.html:167
 msgid "Write your comment"
 msgstr "نظر خود را بنویسید"
 
-#: .\templates\products\product_detail.html:173
+#: .\products\templates\products\product_detail.html:172
 msgid "Submit"
 msgstr "ارسال"
 
-#: .\templates\products\product_detail.html:177
+#: .\products\templates\products\product_detail.html:176
 msgid "To write a comment please Login"
 msgstr "برای نوشتن پیام لطفا وارد حساب کاربری خود شوید"
 
-#: .\templates\products\product_detail.html:178
+#: .\products\templates\products\product_detail.html:177
 msgid "Login"
 msgstr "ورود"
 
-#: .\views.py:55
+#: .\products\views.py:56
 msgid "comment created successfully."
 msgstr "پیام با موفقیت ساخته شد"
+
+#~ msgid "product detail"
+#~ msgstr "جزِییات محصول"

@@ -1,8 +1,19 @@
 {% extends '_base.html' %}
 
-{% load crispy_forms_tags %}
+<!-- Django Template Tags -->
+
 {% load i18n %}
+{% load humanize %}
+
+<!-- Third party Template Tags -->
+
+{% load crispy_forms_tags %}
+{% load jalali_tags %}
+
+<!-- My Template Tags -->
+
 {% load comment_tags %}
+{% load translate_number_tags %}
 
 {% block page_title %}
   
@@ -29,7 +40,7 @@
                                 {{ product.description}}
                             </p>
                             <div class="my-5 py-5 product-price-wrapper mb--25">
-                                <span class="money text-success">{{ product.price }} {% trans '$' %}</span>
+                                <span class="money text-success">{{ product.price|intcomma:False|translate_persian_number }} {% trans '$' %}</span>
                                     <span class="price-separator">-</span>
                                     <span class="money old-price text-danger">۲۱۰,۰۰۰ {% trans '$' %}</span>
                                 </div>
@@ -126,13 +137,13 @@
                                                             <div class="d-flex flex-sm-row flex-row">
                                                                 <img src="assets/img/others/comment-1.jpg" alt="Review Avatar" class="review__avatar">
                                                                 <div>
-                                                                    <div class="review__meta">
-                                                                        <span class="review__published-date">{{ comment.datetime_created}}</span>
+                                                                    <div class="review__meta" dir="ltr">
+                                                                        <span class="review__published-date">{{ comment.datetime_created|to_jalali:'%Y/%B/%d'|translate_persian_number }}</span>
                                                                         <span class="review__dash">-</span>
                                                                         <strong class="review__author px-4">{{ comment.author.username}}</strong>
                                                                     </div>
                                                                     <div class="product-rating">
-                                                                        <div class="m-0 star-rating star-five">
+                                                                        <div class="m-0 star-five">
                                                                             <span>Rated <strong class="rating">{{ comment.stars }}</strong> out of 5</span>
                                                                         </div>
                                                                     </div>

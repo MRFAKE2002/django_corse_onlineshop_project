@@ -44,17 +44,23 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     
+    # We need this django app to put ',' after 3 number in our price and we should load this template tag to our templates and use it as 'intcomma:False'
+    'django.contrib.humanize',
+    
     # Third party
     'crispy_forms',
     'allauth',
     'allauth.account',
-    'rosetta',
+    'rosetta', # We use this app to translate our codes to persian and we should make our LANGUAGES in config settings 
+    'jalali_date', # We use this app to make our date in shamsi and we use it as template tags in our templates
+    'ckeditor', # We use this app to make our texts better and we use it in models as RichTextField
     
     # My apps
     'accounts.apps.AccountsConfig',
     'pages.apps.PagesConfig',
     'products.apps.ProductsConfig',
     'cart.apps.CartConfig',
+    'persian_translate.apps.PersianTranslateConfig',
 
 ]
 
@@ -167,6 +173,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Media config
 
