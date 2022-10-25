@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-19 21:32+0330\n"
-"PO-Revision-Date: 2022-10-19 21:53+0330\n"
+"POT-Creation-Date: 2022-10-19 22:34+0330\n"
+"PO-Revision-Date: 2022-10-20 16:16+0330\n"
 "Last-Translator:   <roozbehsarcheshme@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -20,19 +20,19 @@ msgstr ""
 "X-Translated-Using: django-rosetta 0.9.8\n"
 
 #: .\templates\_base.html:112
-msgid "Logout"
+msgid "LOGOUT"
 msgstr "خروج"
 
 #: .\templates\_base.html:115
-msgid "Profile"
-msgstr "حساب کاربری"
+msgid "PROFILE"
+msgstr "پروفایل"
 
 #: .\templates\_base.html:119
-msgid "Login "
+msgid "LOGIN"
 msgstr "ورود"
 
 #: .\templates\_base.html:122
-msgid "SignUp"
+msgid "SIGNUP"
 msgstr "ثبت نام"
 
 #: .\templates\account\email\email_confirmation_massage.txt:5
