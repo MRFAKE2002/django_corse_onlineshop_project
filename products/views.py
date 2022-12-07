@@ -13,7 +13,7 @@ class ProductListView(generic.ListView):
     # model = Product
     # We use queryset for add or change something that are in our databases in our code
     queryset = Product.objects.filter(active=True)
-    paginate_by = 4
+    paginate_by = 8
     template_name = 'products/product_list.html'
     context_object_name = 'products'    
 
