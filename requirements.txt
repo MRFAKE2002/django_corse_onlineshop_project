@@ -15,6 +15,7 @@ django-jalali-date==1.0.1
 django-js-asset==2.0.0
 django-rosetta==0.9.8
 environs==9.5.0
+gunicorn==20.1.0
 idna==3.3
 jdatetime==4.1.0
 marshmallow==3.17.1

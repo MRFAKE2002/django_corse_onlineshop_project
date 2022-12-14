@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-19 22:34+0330\n"
-"PO-Revision-Date: 2022-10-19 21:42+0330\n"
-"Last-Translator:   <roozbehsarcheshme@gmail.com>\n"
+"POT-Creation-Date: 2022-12-14 12:55+0330\n"
+"PO-Revision-Date: 2022-12-14 12:00+0330\n"
+"Last-Translator: هادی خاجی حسینی <roozbehsarcheshme@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -31,36 +31,35 @@ msgstr "متن پیام"
 msgid "What is your score?"
 msgstr "نظر شما"
 
-#: .\products\templates\products\product_detail.html:43
-#: .\products\templates\products\product_detail.html:45
-#: .\products\templates\products\product_list.html:75
+#: .\products\templates\products\product_detail.html:20
+msgid "Product Details"
+msgstr "جزِییات محصول"
+
+#: .\products\templates\products\product_detail.html:40
+#: .\products\templates\products\product_list.html:98
 msgid "$"
 msgstr "تومان"
 
-#: .\products\templates\products\product_detail.html:59
-#: .\products\templates\products\product_list.html:81
+#: .\products\templates\products\product_detail.html:53
 msgid "add to cart"
 msgstr "اضافه به سبد خرید"
 
-#: .\products\templates\products\product_detail.html:167
+#: .\products\templates\products\product_detail.html:157
 msgid "Write your comment"
 msgstr "نظر خود را بنویسید"
 
-#: .\products\templates\products\product_detail.html:172
+#: .\products\templates\products\product_detail.html:162
 msgid "Submit"
 msgstr "ارسال"
 
-#: .\products\templates\products\product_detail.html:176
+#: .\products\templates\products\product_detail.html:166
 msgid "To write a comment please Login"
 msgstr "برای نوشتن پیام لطفا وارد حساب کاربری خود شوید"
 
-#: .\products\templates\products\product_detail.html:177
+#: .\products\templates\products\product_detail.html:167
 msgid "Login"
 msgstr "ورود"
 
 #: .\products\views.py:56
 msgid "comment created successfully."
 msgstr "پیام با موفقیت ساخته شد"
-
-#~ msgid "product detail"
-#~ msgstr "جزِییات محصول"

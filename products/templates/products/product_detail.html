@@ -38,9 +38,6 @@
                             <h3 class="product-title mb--20">{{ product.title }}</h3>                            
                             <div class="my-5 py-5 product-price-wrapper mb--25">
                                 <span class="money text-success">{{ product.price|intcomma:False|translate_persian_number }} {% trans '$' %}</span>
-                                    <span class="price-separator">-</span>
-                                    <span class="money old-price text-danger">۲۱۰,۰۰۰ {% trans '$' %}</span>
-                                </div>
                                 <div class="product-action d-flex align-items-sm-center align-content-center mb--30">
                                 </div>
                                 <form action="{% url 'cart:product_add_to_cart' product.id %}" class="form text-right" method="POST">

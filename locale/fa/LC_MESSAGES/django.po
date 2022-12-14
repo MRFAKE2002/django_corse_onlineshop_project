@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-19 22:34+0330\n"
-"PO-Revision-Date: 2022-10-20 16:16+0330\n"
-"Last-Translator:   <roozbehsarcheshme@gmail.com>\n"
+"POT-Creation-Date: 2022-12-14 12:55+0330\n"
+"PO-Revision-Date: 2022-12-14 12:00+0330\n"
+"Last-Translator: هادی خاجی حسینی <roozbehsarcheshme@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -19,19 +19,23 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Translated-Using: django-rosetta 0.9.8\n"
 
-#: .\templates\_base.html:112
+#: .\pages\templates\pages\profile.html:19
+msgid "Profile"
+msgstr ""
+
+#: .\templates\_base.html:111
 msgid "LOGOUT"
 msgstr "خروج"
 
-#: .\templates\_base.html:115
+#: .\templates\_base.html:114
 msgid "PROFILE"
 msgstr "پروفایل"
 
-#: .\templates\_base.html:119
+#: .\templates\_base.html:118
 msgid "LOGIN"
 msgstr "ورود"
 
-#: .\templates\_base.html:122
+#: .\templates\_base.html:121
 msgid "SIGNUP"
 msgstr "ثبت نام"
 
@@ -46,6 +50,9 @@ msgid ""
 "%(activate_url)s\n"
 "\n"
 msgstr ""
+"\n"
+"سلام از %(site_name)s اگر این ایمیل را درخواست کردید، لطفا روی لینک زیر کلیک "
+"کنید: %(activate_url)s\n"
 
 #: .\templates\account\email\email_confirmation_subject.txt:3
 msgid "please confirm your email"
@@ -62,6 +69,8 @@ msgid ""
 "Please confirm that <a href=\"mailto:%(email)s\">%(email)s</a> is an e-mail "
 "address for user %(user_display)s."
 msgstr ""
+"لطفاً تأیید کنید که <a href=\"mailto:%(email)s\">%(email)s</a> یک آدرس ایمیل "
+"برای کاربر %(user_display)s است."
 
 #: .\templates\account\email_confirm.html:20
 msgid "Confirm"
@@ -70,6 +79,28 @@ msgstr "تایید"
 #: .\templates\account\email_confirm.html:27
 #, python-format
 msgid ""
-"This e-mail confirmation link expired or is invalid. Please <a "
-"href=\"%(email_url)s\">issue a new e-mail confirmation request</a>."
+"This e-mail confirmation link expired or is invalid. Please <a href="
+"\"%(email_url)s\">issue a new e-mail confirmation request</a>."
 msgstr ""
+"این پیوند تأیید ایمیل منقضی شده یا نامعتبر است. لطفاً <a href=\"%(email_url)s"
+"\">یک درخواست تأیید ایمیل جدید صادر کنید</a>."
+
+#: .\templates\cart_sidebar.html:15
+msgid "Cart"
+msgstr "سبد خرید"
+
+#: .\templates\cart_sidebar.html:33 .\templates\cart_sidebar.html:42
+msgid "$"
+msgstr "تومان "
+
+#: .\templates\cart_sidebar.html:40
+msgid "total price"
+msgstr "قیمت کل"
+
+#: .\templates\cart_sidebar.html:45
+msgid "go to Cart"
+msgstr "رفتن به سبد خرید"
+
+#: .\templates\cart_sidebar.html:46
+msgid "checkout"
+msgstr "پرداخت"
